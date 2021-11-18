@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&family=Quicksand:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Praise&family=Quicksand:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Praise&family=Quicksand:wght@300&display=swap');
+.explorepart{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    border: 1px solid black;
+    background-color: transparent;
+    /* background-color: rgb(253, 249, 244); */
+    /* margin-left: 40px; */
+    
+}
+.title{
+    width: 40%;
+    border: 1px solid black;
+}
+.contenttopic{
+   
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Praise', cursive;
+    font-family: 'Quicksand', sans-serif;
+    width: 60%;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+.titlexplore{
+    margin-left: 40px;
+    font-size: 35px;
+    font-family: 'Praise', cursive;
+    font-family: 'Quicksand', sans-serif;
+   
+}

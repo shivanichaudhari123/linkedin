@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 10px; */
+    margin-left: 40px;
+}
+.logo{
+    height: 100px;
+    width: 150px;
+}
+.buttons{
+    margin-top: 10px;
+    margin-right: 80px;
+    /* display: flex;
+    margin-right: 10px; */
+    /* justify-content: space-between; */
+}
+.signin{
+    border-radius: 50px;
+    color: blue;
+    border-color: blue;
+    padding: 3px;
+    width: 90px;
+}
+.joinnow{
+    color: grey;
+}
