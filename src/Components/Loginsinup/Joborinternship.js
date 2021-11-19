@@ -1,4 +1,6 @@
 import styles from "./Joborinternship.module.css";
+//import Joborinternship from "../../Assets/Button/Jobinternbtn";
+import Chipjibtn from "../../Assets/Button/Chipjibtn";
 const Joborinternship=()=>{
     return(
         <div className={styles.explorepart}>
@@ -7,12 +9,18 @@ const Joborinternship=()=>{
            </div>
            <div className={styles.contenttopic}>
                <p>Suggested Searches</p>
-               <button>enginerring </button>
-               <button>finance </button>
+               <Chipjibtn/>
+                {/* <button>enginerring </button>
+               <button>finance </button>  */}
            </div>
             
         </div>
-        // <div className={styles.jobinternshipart}>
+        
+    );
+}
+export default Joborinternship;
+
+// <div className={styles.jobinternshipart}>
         //    <div classname={styles.fobinternshiptitle}>
         //        <p className={styles.title}>Find a right job or internship for you</p>
         //    </div>
@@ -21,6 +29,3 @@ const Joborinternship=()=>{
         //        <button>finance</button>
         //    </div>
         // </div>
-    );
-}
-export default Joborinternship;
