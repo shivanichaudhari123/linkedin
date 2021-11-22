@@ -3,4 +3,5 @@
     flex-direction: column;
     /* margin-left: 40px; */
     margin-right: 0px;
+    overflow: hidden;
 }

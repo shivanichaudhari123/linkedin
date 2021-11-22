@@ -1,5 +1,7 @@
 import styles from "./Navbar.module.css";
 import Button from '@mui/material/Button';
+///import Btn from "../../Assets/Button/Btn";
+//import styles from "../../Assets/Styling/Styling.module.css";
 import React from "react";
 const Navbar=()=>{
     return(
@@ -9,31 +11,13 @@ const Navbar=()=>{
             </div>
             <div className={styles.buttons}>
             <Button className={styles.joinnow} variant="text">Join now</Button>
-            {/* <button className={styles.signin}>Sign In</button> */}
-            <Button variant="outlined" defaultValue={30}
-                sx={{
+           
+            <Button variant="outlined" defaultValue={30} sx={{
                     width: 100,
-                    // color: 'success.main',
-                    // '& .MuiSlider-thumb': {
+                    borderRadius: '30px',
+                }} className={styles.signin}>Sign in</Button>
 
-                    borderRadius: '20px',
-            
-                }}>Sign in</Button>
-
-{/* 
-            <Button
-                defaultValue={30}
-                sx={{
-                    width: 300,
-                    color: 'success.main',
-                    '& .MuiSlider-thumb': {
-                    borderRadius: '1px',
-                    },
-                }}
-                /> */}
             </div>
-
-
         </div>
     );
 }

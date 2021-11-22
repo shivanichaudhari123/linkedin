@@ -4,6 +4,9 @@ import Formpart from "./Formpart";
 import Exploretopics from "./Exploretopics";
 import Joborinternship from "./Joborinternship";
 import Postjob from "./Postjob";
+import Opentoworkscrolling from "./Opentoworkscrolling";
+import Connectwithpeople from "./Connectwithepople";
+import Dream from "./Dream";
 const Loginsignup=()=>{
     return(
         <div className={styles.Loginsignup}>
@@ -12,6 +15,9 @@ const Loginsignup=()=>{
             <Exploretopics/>
             <Joborinternship/>
             <Postjob/>
+            <Opentoworkscrolling/>
+            <Connectwithpeople/>
+            <Dream/>
         </div>
     );
 }

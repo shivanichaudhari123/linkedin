@@ -1,4 +1,5 @@
 import styles from "./Postjob.module.css";
+import Chiponly from "../../Assets/Button/Chiponly";
 const Postjob=()=>{
     return(
         <div className={styles.explorepart}>
@@ -7,7 +8,7 @@ const Postjob=()=>{
            </div>
            <div className={styles.contenttopic}>
                <p>Content topics</p>
-               <button>Post Jobs </button>
+               <Chiponly/>
                
            </div>
             
