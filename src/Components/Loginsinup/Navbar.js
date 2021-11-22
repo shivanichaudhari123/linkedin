@@ -11,34 +11,13 @@ const Navbar=()=>{
             </div>
             <div className={styles.buttons}>
             <Button className={styles.joinnow} variant="text">Join now</Button>
-            {/* <button className={styles.signin}>Sign In</button> */}
-            <Button variant="outlined" defaultValue={30} className={styles.signin}
-                // sx={{
-                //     width: 100,
-                //     borderRadius: '30px',
-                //     hover:{
-                //         backgroundColor:'grey',
-                //         cursor:'pointer',
-                //     }
-                // }}
-                >Sign in</Button>
+           
+            <Button variant="outlined" defaultValue={30} sx={{
+                    width: 100,
+                    borderRadius: '30px',
+                }} className={styles.signin}>Sign in</Button>
 
-                {/* <Btn className={styles.signincorner}/> */}
-
-{/* 
-            <Button
-                defaultValue={30}
-                sx={{
-                    width: 300,
-                    color: 'success.main',
-                    '& .MuiSlider-thumb': {
-                    borderRadius: '1px',
-                    },
-                }}
-                /> */}
             </div>
-
-
         </div>
     );
 }
