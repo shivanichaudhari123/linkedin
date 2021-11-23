@@ -7,6 +7,8 @@ import Postjob from "./Postjob";
 import Opentoworkscrolling from "./Opentoworkscrolling";
 import Connectwithpeople from "./Connectwithepople";
 import Dream from "./Dream";
+import Joinfrnds from "./Joinfrnds";
+import Footer from "./Footerpart";
 const Loginsignup=()=>{
     return(
         <div className={styles.Loginsignup}>
@@ -18,6 +20,8 @@ const Loginsignup=()=>{
             <Opentoworkscrolling/>
             <Connectwithpeople/>
             <Dream/>
+            <Joinfrnds/>
+            <Footer/>
         </div>
     );
 }

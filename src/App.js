@@ -5,16 +5,17 @@ import { Routes ,Route } from 'react-router-dom';
 import Nextpage from "./Pages/Nextpage";
 
 
+
 function App() {
   return (
     <React.Fragment>
-    {/* <div>   
+    <div>   
     <Router > 
       <Routes>
        <Route path="/Nextpage" component={() => <Nextpage/>} />
        </Routes>   
     </Router > 
-    </div> */}
+    </div>
     <div className={Loginsignup}>
       <Loginsignup/>
     </div>

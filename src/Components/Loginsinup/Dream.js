@@ -4,11 +4,11 @@ const Dream=()=>{
     return (
         <div className={styles.Dream}>
            <div className={styles.vedio}>
-               <p>Vedio</p>
+               {/* <p>Vedio</p> */}
                <Vedioutube/>
            </div>
            <div className={styles.caption}>
-               <p>In it to chase my dream</p>
+           <p className={styles.subcaption}>In it to chase my dream</p>
            </div>
         </div>
     );

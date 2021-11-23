@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Praise&family=Quicksand:wght@300&display=swap');
+.joinfrnds{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    background-color: rgb(212, 231, 243);
+}
+.imgfrnds{
+    height: 100%;
+    width: 100%;
+}
+.caption{
+    border: 1px solid black;
+    font-size: 40px;
+    color: black;
+    /* background-color: rgb(168, 204, 224); */
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Praise', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+.getstarted{
+     margin-left: 40px;
+     margin-top:-20px;
+}

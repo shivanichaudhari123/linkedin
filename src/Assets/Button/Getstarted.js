@@ -8,21 +8,20 @@ const useStyles = makeStyles((theme) => ({
       margin:'6px',
       padding:'3px',
     "&&:hover": {
-      backgroundColor: "grey",
+      backgroundColor: "skyblue",
       textDecoration: "underline"
     }
   }
 }));
 
- const Chiponly=()=>{
+ const Getstarted=()=>{
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <div className={classes.rowfirst}>
-      <Chip label="Post jobs" variant="outlined" className={classes.chipStyle} />
-      {/* <Chip label={name} variant="outlined" className={classes.chipStyle}/> */}
+      <Chip label="Get Started" variant="outlined" className={classes.chipStyle} />
       </div>
     </div>
   );
 }
-export default Chiponly;
+export default Getstarted;
