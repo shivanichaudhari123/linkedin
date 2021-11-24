@@ -1,60 +1,77 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import React, {useState} from "react";
+import {makeStyles} from "@material-ui/core/styles";
 import Chip from "@material-ui/core/Chip";
 //import { Icon } from 'antd';
 const useStyles = makeStyles((theme) => ({
-  
   chipStyle: {
-      margin:'6px',
-      padding:'3px',
+    margin: "7px",
+    padding: "9px",
+    fontSize: "16px",
     "&&:hover": {
       backgroundColor: "grey",
-      textDecoration: "underline"
-    }
+      textDecoration: "underline",
+    },
   },
-  root:{
-    display:'flex',
-    flexDirection:'column',
-},
-rowfirst:{
-    display:'flex',
-    flexDirection:'row',
-}
+  root: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
+  rowfirst: {
+    display: "flex",
+    flexDirection: "row",
+  },
 }));
 
- const OutlinedChips=()=>{
+const data = [
+  "See all topics",
+  "Science and Enviornment",
+  "Marketing and Advertising",
+  "Sales and Retails",
+  "Technology ",
+  "Finance and Economy",
+  "Health",
+  "Bussiness and Management",
+];
+const OutlinedChips = () => {
+  const [list, setList] = useState(data);
+  const [status, setStatus] = useState(false);
+  const showMore = () => {
+    if (status) {
+      setList(data);
+      setStatus(false);
+    } else {
+      setList([
+        ...list,
+        "Lifestyle and Leisure",
+        "Society and Culture",
+        "Art and Entertainment",
+        "Education and Learning",
+        "Sports and Fitness",
+        "Career and Employment",
+      ]);
+      setStatus(true);
+    }
+  };
+  // const resetList = () => {
+  //   setList(data);
+  // };
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <div className={classes.rowfirst}>
-      <Chip label="See all topics" variant="outlined" className={classes.chipStyle} />
-      <Chip label="Science and Enviornment" variant="outlined" className={classes.chipStyle} />
-      </div>
-      <div className={classes.rowfirst}>
-      <Chip label="Marketing and Advertising" variant="outlined" className={classes.chipStyle} />
-      <Chip label="Sales and retails" variant="outlined" className={classes.chipStyle} />
-      <Chip label="Technology" variant="outlined" className={classes.chipStyle} />
-      </div>
-      <div className={classes.rowfirst}>
-      <Chip label="Finance and Economy" variant="outlined" className={classes.chipStyle} />
-      <Chip label="Health" variant="outlined" className={classes.chipStyle} />
-      <Chip label="Bussiness Management" variant="outlined" className={classes.chipStyle} />
-      </div>
-      <div className={classes.rowfirst}>
-      <Chip label="Lifestyle and Liesure" variant="outlined" className={classes.chipStyle} />
-      <Chip label="Society And Culture" variant="outlined" className={classes.chipStyle} />
-      </div>
-      <div className={classes.rowfirst}>
-      <Chip label="Art and Entertainment" variant="outlined" className={classes.chipStyle} />
-      <Chip label="Education and Learning" variant="outlined" className={classes.chipStyle} />
-      </div>
-      <div className={classes.rowfirst}>
-      <Chip label="Sports and Fitness" variant="outlined" className={classes.chipStyle} />
-      <Chip label="Career and Advertisement" variant="outlined" className={classes.chipStyle} />
+      {list.map((item, i) => {
+        return (
+          <Chip
+            label={item}
+            key={i}
+            variant="outlined"
+            className={classes.chipStyle}
+          />
+        );
+      })}
+      <div>
+        <button onClick={showMore}>show {status ? "less" : "more"}</button>
       </div>
     </div>
   );
-}
+};
 export default OutlinedChips;
-
-      

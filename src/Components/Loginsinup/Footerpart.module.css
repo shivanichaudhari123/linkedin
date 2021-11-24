@@ -48,11 +48,13 @@
 }
 .footercopyright{
     display: flex;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     height: 20px;
-    width: 20px;
+    background-color: white;
+    width: 30px;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
 }
 .ft{
     font-size: 10px;

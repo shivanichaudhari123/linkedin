@@ -1,55 +1,57 @@
-.connectpeople{
-    display: flex;
-    flex-direction: row;
-    /* border: 1px solid black; */
-    flex: 1;
+.connectpeople {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  flex: 1;
+  /* margin-bottom: 40px; */
 }
-.ftf{
-    width: 50%;
-    border: 1px solid black;
-    /* display: flex;
+.ftf {
+  width: 50%;
+  border: 1px solid black;
+  /* display: flex;
     flex: 1; */
-
 }
-.imgone{
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    margin-left: 70px;
-    margin-top: 70px;
-    margin-bottom: 40px;
+.imgone {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-left: 70px;
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
-.chair{
-    width: 50%;
-    border: 1px solid black;
-    /* display: flex;
+.chair {
+  width: 50%;
+  border: 1px solid black;
+  /* display: flex;
     flex: 1; */
-
 }
-.imgtwo{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin-left: 100px;
-    margin-top: 70px;
+.imgtwo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 70px;
 }
-.heading{
-    display: flex;
-    flex-direction: column;
-    margin-top: -40px;
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin-top: -40px;
 }
-.connect{
-    font-size: 32px;
-    margin-left: 60px;
-    color: rgb(83, 81, 81);
+.connect {
+  font-size: 32px;
+  margin-left: 60px;
+  color: rgb(83, 81, 81);
 }
-.help{
-    font-size: 32px;
-    margin-top: -40px;
-    margin-left: 60px;
-    color: rgb(83, 81, 81);
+.help {
+  font-size: 32px;
+  margin-top: -40px;
+  margin-left: 60px;
+  color: rgb(83, 81, 81);
 }
-.findpeopleuknow{
-   margin-top: -10px;
-    margin-left: 70px;
+.findpeopleuknow {
+  margin-top: -10px;
+  margin-left: 70px;
 }
+/* .dropdowndiv {
+  margin-bottom: 100px;
+} */
