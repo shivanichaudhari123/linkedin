@@ -4,6 +4,7 @@ import React from "react";
 import {BrowserRouter, Route, Routes, Link, Redirect} from "react-router-dom";
 //import { Routes ,Route } from 'react-router-dom';
 import Nextpage from "./Pages/Nextpage";
+import Signup from "./Pages/Signup";
 
 function App() {
   return (
@@ -13,23 +14,17 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Loginsignup />} />
-
             <Route path="/Nextpage" element={<Nextpage />} exact={true} />
+            {/* <Route path="/" exact>
+              element={<Signup />}
+            </Route> */}
+
+            {/* {["/Signup", "/users", "/widgets"].map((path, index) => (
+              <Route path={Signup} component={Signup} key={index} />
+            ))} */}
           </Routes>
         </BrowserRouter>
-        {/* <Router > 
-      <Routes>
-      <Route path="/" component={() => <Loginsignup/>} />
-       <Route path="/Nextpage" component={() => <Nextpage/>} />
-       </Routes>   
-    </Router >  */}
       </div>
-      {/* <div className={Loginsignup}>
-      <Loginsignup/>
-    </div> */}
-      {/* <div>
-      <Loginsignup/>
-    </div> */}
     </React.Fragment>
   );
 }

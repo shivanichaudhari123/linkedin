@@ -9,20 +9,24 @@ import Connectwithpeople from "./Connectwithepople";
 import Dream from "./Dream";
 import Joinfrnds from "./Joinfrnds";
 import Footer from "./Footerpart";
-const Loginsignup=()=>{
-    return(
-        <div className={styles.Loginsignup}>
-            <Navbar/>
-            <Formpart/>
-            <Exploretopics/>
-            <Joborinternship/>
-            <Postjob/>
-            <Opentoworkscrolling/>
-            <Connectwithpeople/>
-            <Dream/>
-            <Joinfrnds/>
-            <Footer/>
-        </div>
-    );
-}
+import Links from "../../Assets/Button/Link";
+import Shivani from "../../Assets/Button/Shivani";
+const Loginsignup = () => {
+  return (
+    <div className={styles.Loginsignup}>
+      <Navbar />
+      <Formpart />
+      <Exploretopics />
+      <Joborinternship />
+      <Postjob />
+      {/* <Opentoworkscrolling /> */}
+      <Shivani />
+      <Connectwithpeople />
+      <Dream />
+      <Joinfrnds />
+      <Footer />
+      {/* <Links /> */}
+    </div>
+  );
+};
 export default Loginsignup;

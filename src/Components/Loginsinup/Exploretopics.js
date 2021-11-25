@@ -26,13 +26,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Exploretopics = () => {
   const classes = useStyles();
-  // const [open, setOpen] = useState(false);
-  // const handleClick = (e) => {
-  //   setOpen(!open);
-  // };
-
-  // const anchorRef = useRef(null);
-
   return (
     <div className={styles.explorepart}>
       <div className={styles.title}>

@@ -2,37 +2,22 @@ import styles from "./Footerpart.module.css";
 import About from "../../Pages/About";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import {makeStyles} from "@material-ui/core/styles";
-// import  { Redirect } from 'react-router-dom';
+import {Link} from "react-router-dom";
+import Signup from "../../Pages/Signup";
+
+import {Route} from "react-router-dom";
+
 const useStyles = makeStyles((theme) => ({
   ftdownarrow: {
     // topMargin:'-50px',
     margin: "-10px",
     padding: "10px",
   },
-
-  //     chipStyle: {
-  //         margin:'6px',
-  //         padding:'3px',
-  //       "&&:hover": {
-  //         backgroundColor: "grey",
-  //         textDecoration: "underline"
-  //       }
-  //     },
-  //     root:{
-  //       display:'flex',
-  //       flexDirection:'column',
-  //   },
-  //   rowfirst:{
-  //       display:'flex',
-  //       flexDirection:'row',
-  //   }
 }));
 const Footer = () => {
   const classes = useStyles();
   return (
     <div>
-      {/* <p>this is footer part</p> */}
-      {/* <div><Redirect to='/About'  /></div> */}
       <div className={styles.linkedinlogo}>
         <div>
           <img
@@ -43,13 +28,14 @@ const Footer = () => {
         </div>
         <div>
           <p className={styles.genaral}>General</p>
-          <a href="\signup" className={styles.subp}>
+          <a href="\Signup" className={styles.subp}>
             signup
           </a>
-          <a href="\signup" className={styles.subp}>
+          <a href="\Signup" className={styles.subp}>
             Help center
           </a>
-          <a href="\signup" className={styles.subp}>
+          {/* <Link to="/Signup">Help Center</Link> */}
+          <a href="\Signup" className={styles.subp}>
             About
           </a>
           <a href="\signup" className={styles.subp}>
