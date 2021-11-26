@@ -1,9 +1,10 @@
 .shivani {
   border: 1px solid black;
-  height: 200px;
+  height: 400px;
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding: 10px;
 }
 .images {
   height: 200px;

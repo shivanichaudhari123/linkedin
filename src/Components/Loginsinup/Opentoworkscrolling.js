@@ -4,9 +4,9 @@ import Carousel from "react-elastic-carousel";
 const Opentoworkscrolling = () => {
   return (
     <div className={styles.workplatform}>
-      <div>
+      {/* <div>
         <Prevnextnav />
-      </div>
+      </div> */}
       <div className={styles.seperation}>
         <div className={styles.info}>
           <div className={styles.heading}>

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import Chip from "@material-ui/core/Chip";
+import styles from "./Carousal.module.css";
 //import { Icon } from 'antd';
 const useStyles = makeStyles((theme) => ({
   chipStyle: {
@@ -52,9 +53,6 @@ const OutlinedChips = () => {
       setStatus(true);
     }
   };
-  // const resetList = () => {
-  //   setList(data);
-  // };
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -69,7 +67,9 @@ const OutlinedChips = () => {
         );
       })}
       <div>
-        <button onClick={showMore}>show {status ? "less" : "more"}</button>
+        <button className={styles.btn} onClick={showMore}>
+          show {status ? "less" : "more"}
+        </button>
       </div>
     </div>
   );

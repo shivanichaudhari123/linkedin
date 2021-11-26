@@ -1,9 +1,12 @@
+import react from "react";
 import styles from "./Footerpart.module.css";
 import About from "../../Pages/About";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import {makeStyles} from "@material-ui/core/styles";
 import {Link} from "react-router-dom";
 import Signup from "../../Pages/Signup";
+import {browserHistory as history} from "react-router";
+import {useNavigate} from "react-router-dom";
 
 import {Route} from "react-router-dom";
 
@@ -15,7 +18,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 const Footer = () => {
+  //const history = useHistory();
+  const navigate = useNavigate();
   const classes = useStyles();
+
   return (
     <div>
       <div className={styles.linkedinlogo}>
@@ -26,72 +32,125 @@ const Footer = () => {
             alt="linkedinlogo"
           />
         </div>
-        <div>
+        <div className={styles.firstgrp}>
           <p className={styles.genaral}>General</p>
-          <a href="\Signup" className={styles.subp}>
-            signup
-          </a>
-          <a href="\Signup" className={styles.subp}>
-            Help center
-          </a>
-          {/* <Link to="/Signup">Help Center</Link> */}
-          <a href="\Signup" className={styles.subp}>
+          <button className={styles.btn} onClick={() => navigate("/Signup")}>
+            Signup
+          </button>
+          <button
+            className={styles.btn}
+            onClick={() => navigate("/Help Center")}
+          >
             About
-          </a>
-          <a href="\signup" className={styles.subp}>
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/About")}>
+            About
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Press")}>
             Press
-          </a>
-          <a href="\signup" className={styles.subp}>
-            About
-          </a>
-          <a href="\signup" className={styles.subp}>
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Blog")}>
             Blog
-          </a>
-          <a href="\signup" className={styles.subp}>
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Careers")}>
             Careers
-          </a>
-          <a href="\signup" className={styles.subp}>
-            developers
-          </a>
-          {/* <a href="\signup"><span className={styles.subp}>Help center</span></a>
-                <a href="\About"><span className={styles.subp}>About</span></a>
-                <a href="\signup"><span className={styles.subp}>Press</span></a>
-                <a href="\signup"><span className={styles.subp}>Blog</span></a>
-                <a href="\signup"><span className={styles.subp}>Careers</span></a>
-                <a href="\signup"><span className={styles.subp}>developers</span></a> */}
+          </button>
+          <button
+            className={styles.btn}
+            onClick={() => navigate("/Developers")}
+          >
+            Developers
+          </button>
         </div>
-        <div>
-          <p>Browse Linkedin</p>
-          <p className={styles.subp}>Learning</p>
-          <p className={styles.subp}>Jobs</p>
-          <p className={styles.subp}>Salary</p>
-          <p className={styles.subp}>Mobile</p>
-          <p className={styles.subp}>Service</p>
-          <p className={styles.subp}>Products</p>
+        <div className={styles.firstgrp}>
+          <p className={styles.genaral}>Browse Linkedin</p>
+          <button className={styles.btn} onClick={() => navigate("/Learning")}>
+            Learning
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Jobs")}>
+            Jobs
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Salary")}>
+            Salary
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Mobile")}>
+            Mobile
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Service")}>
+            Service
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Products")}>
+            Products
+          </button>
         </div>
-        <div>
-          <p>Bussiness Solutions</p>
-          <p className={styles.subp}>Talent</p>
-          <p className={styles.subp}>Marketing</p>
-          <p className={styles.subp}>Sales</p>
-          <p className={styles.subp}>Learning</p>
+        <div className={styles.firstgrp}>
+          <p className={styles.genaral}>Bussiness Solutions</p>
+          <button className={styles.btn} onClick={() => navigate("/Talent")}>
+            Talent
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Marketing")}>
+            Marketing
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Sales")}>
+            Sales
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Learning")}>
+            Learning
+          </button>
         </div>
-        <div>
-          <p>Directories</p>
-          <p className={styles.subp}>Members</p>
-          <p className={styles.subp}>Jobs</p>
-          <p className={styles.subp}>Companies</p>
-          <p className={styles.subp}>Salaries</p>
-          <p className={styles.subp}>Laerning</p>
-          <p className={styles.subp}>Posts</p>
-          <p className={styles.subp}>Articles</p>
-          <p className={styles.subp}>Schools</p>
-          <p className={styles.subp}>News</p>
-          <p className={styles.subp}>News Letters</p>
-          <p className={styles.subp}>Services</p>
-          <p className={styles.subp}>Interview Prep</p>
-          <p className={styles.subp}>Products</p>
-          <p className={styles.subp}>Content Topics</p>
+        <div className={styles.firstgrp}>
+          <p className={styles.genaral}>Directories</p>
+          <button className={styles.btn} onClick={() => navigate("/Members")}>
+            Members
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Jobs")}>
+            Jobs
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Companies")}>
+            Companies
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Salaries")}>
+            Salaries
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Learning")}>
+            Learning
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Posts")}>
+            Posts
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Articles")}>
+            Articles
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Schools")}>
+            Schools
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/News")}>
+            News
+          </button>
+          <button
+            className={styles.btn}
+            onClick={() => navigate("/News Letters")}
+          >
+            News Letters
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Services")}>
+            Services
+          </button>
+          <button
+            className={styles.btn}
+            onClick={() => navigate("/Interview Prep")}
+          >
+            Interview Prep
+          </button>
+          <button className={styles.btn} onClick={() => navigate("/Products")}>
+            Products
+          </button>
+          <button
+            className={styles.btn}
+            onClick={() => navigate("/Content Topics")}
+          >
+            Content Topics
+          </button>
         </div>
       </div>
       <div className={styles.footer}>

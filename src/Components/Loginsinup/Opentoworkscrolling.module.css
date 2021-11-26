@@ -1,66 +1,69 @@
-.workplatform{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    background-color: transparent;
+.workplatform {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: transparent;
 }
-.seperation{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    flex: 2;
+.seperation {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  flex: 2;
 }
-.info{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    border: 1px solid black;
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid black;
 }
-.image{
-    display: flex;
-    width: 50%;
-    border: 1px solid black;
+.image {
+  display: flex;
+  width: 50%;
+  border: 1px solid black;
 }
-.prevnext{
-    margin-left: 760px;
-    margin-top: 100px;
-    background-color: transparent;
+.prevnext {
+  margin-left: 760px;
+  margin-top: 100px;
+  background-color: transparent;
 }
-.mblinhand{
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-bottom: 50px;
+.mblinhand {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-bottom: 50px;
 }
-.heading{
-    color: rgb(34, 165, 218);
-    margin-left: 30px;
-    font-size: 32px;
-    
+.heading {
+  color: rgb(34, 165, 218);
+  margin-left: 30px;
+  font-size: 32px;
 }
-.secondheading{
-    margin-top: -40px;
-    
+.secondheading {
+  margin-top: -40px;
 }
-.infodescription{
-    margin-left: 30px;
+.infodescription {
+  margin-left: 30px;
 }
-.infosec{
-    /* margin-left: 30px;  */
-    margin-top: -40px;
-    font-size: 24px;
+.infosec {
+  /* margin-left: 30px;  */
+  margin-top: -40px;
+  font-size: 24px;
 }
-.previous{
-    /* margin-bottom: 30px; */
-    border: 1px solid black;
-    /* margin-bottom: 50%; */
-    /* padding: 10px; */
-   
-    /* margin: 10px; */
-    
+.previous {
+  /* margin-bottom: 30px; */
+  border: 1px solid black;
+  /* margin-bottom: 50%; */
+  /* padding: 10px; */
+
+  /* margin: 10px; */
 }
-.btnmargin{
-    margin:10px;
+.btnmargin {
+  margin: 10px;
+}
+.conversationtoday {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: transparent;
 }

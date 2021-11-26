@@ -1,20 +1,22 @@
 import Loginsignup from "./Components/Loginsinup/Loginsinup";
-//import {BrowserRouter as Router} from 'react-router-dom';
 import React from "react";
 import {BrowserRouter, Route, Routes, Link, Redirect} from "react-router-dom";
-//import { Routes ,Route } from 'react-router-dom';
 import Nextpage from "./Pages/Nextpage";
 import Signup from "./Pages/Signup";
+import Helpcenter from "./Pages/Helpcenter";
+import About from "./Pages/About";
 
 function App() {
   return (
     <React.Fragment>
       <div>
-        {/* <Loginsignup/> */}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Loginsignup />} />
             <Route path="/Nextpage" element={<Nextpage />} exact={true} />
+            <Route path="/Helpcenter" element={<Helpcenter />} exact={true} />
+            <Route path="/About" element={<About />} exact={true} />
+
             {/* <Route path="/" exact>
               element={<Signup />}
             </Route> */}

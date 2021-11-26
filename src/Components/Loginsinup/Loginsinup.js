@@ -10,7 +10,12 @@ import Dream from "./Dream";
 import Joinfrnds from "./Joinfrnds";
 import Footer from "./Footerpart";
 import Links from "../../Assets/Button/Link";
-import Shivani from "../../Assets/Button/Shivani";
+import Shivani from "../../Assets/Button/Carousal";
+import Realshivani from "../../Assets/Button/Realshivani";
+import Doublecopyfooter from "./Doublecopyfooter";
+import Conversationtoday from "./Conversationtoday";
+import Stayuptodate from "./Stayuptodate";
+import Carousal from "../../Assets/Button/Carousal";
 const Loginsignup = () => {
   return (
     <div className={styles.Loginsignup}>
@@ -19,12 +24,16 @@ const Loginsignup = () => {
       <Exploretopics />
       <Joborinternship />
       <Postjob />
-      {/* <Opentoworkscrolling /> */}
-      <Shivani />
+      {/* <Opentoworkscrolling />
+      <Conversationtoday />
+      <Stayuptodate /> */}
+      <Carousal />
+      {/* <Realshivani /> */}
       <Connectwithpeople />
       <Dream />
       <Joinfrnds />
       <Footer />
+      {/* <Doublecopyfooter /> */}
       {/* <Links /> */}
     </div>
   );
