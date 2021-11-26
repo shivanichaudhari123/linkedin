@@ -1,0 +1,29 @@
+.Dream{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border: 1px solid black;
+    margin-bottom: 80px;
+}
+.vedio{
+    display: flex;
+    width: 40%;
+    border: 1px solid black;
+    margin-left: 40px; 
+    margin-top: 30px;
+    /* extra */
+}
+.caption{
+    display: flex;
+    width: 60%;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    /* margin-right: 50px; */
+    color: rgb(187, 52, 52);
+}
+.subcaption{
+    margin-right: 140px;
+    /* border: 1px solid black; */
+}
